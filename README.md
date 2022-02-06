@@ -74,6 +74,18 @@ fetch('https://messkhujun.herokuapp.com/auth/passwordResetOtpVerify/:token',{
     })
 ```
 
+## password change code verify api: https://messkhujun.herokuapp.com/auth/passwordChange
+
+```
+fetch('https://messkhujun.herokuapp.com/auth/passwordChange',{
+    method: 'PUT',
+    headers: {
+    'Content-Type': 'application/json',
+    'authorization': `Bearer ${token}` //required
+    },
+    })
+```
+
 ## get profile api: https://messkhujun.herokuapp.com/users/profile
 
 ```
