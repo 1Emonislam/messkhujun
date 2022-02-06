@@ -49,6 +49,31 @@ fetch('https://messkhujun.herokuapp.com/auth/signIn',{
     })
 ```
 
+## phone password reset api: https://messkhujun.herokuapp.com/auth/passwordResetSender
+
+```
+fetch('https://messkhujun.herokuapp.com/auth/passwordResetSender',{
+    method: 'POST',
+    headers: {
+    'Content-Type': 'application/json',
+    },
+    body:JSON.stringify({
+    "phone":"01943177541"
+})
+    })
+```
+
+## phone password reset code verify api: https://messkhujun.herokuapp.com/auth/passwordResetOtpVerify/:token
+
+```
+fetch('https://messkhujun.herokuapp.com/auth/passwordResetOtpVerify/:token',{
+    method: 'POST',
+    headers: {
+    'Content-Type': 'application/json',
+    },
+    })
+```
+
 ## get profile api: https://messkhujun.herokuapp.com/users/profile
 
 ```
