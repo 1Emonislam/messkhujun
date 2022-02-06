@@ -71,6 +71,9 @@ fetch('https://messkhujun.herokuapp.com/auth/passwordResetOtpVerify/:token',{
     headers: {
     'Content-Type': 'application/json',
     },
+    body:JSON.stringify({
+    "otp":"1234"
+})
     })
 ```
 
@@ -82,6 +85,9 @@ fetch('https://messkhujun.herokuapp.com/auth/passwordChange/:token',{
     headers: {
     'Content-Type': 'application/json',
     },
+    body:JSON.stringify({
+    "password":"emonD@d2323"
+})
     })
 ```
 
