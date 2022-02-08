@@ -1,9 +1,9 @@
 # messkhujun
 
-## mess pupular api: https://messkhujun.herokuapp.com/mess/popular?page=1&&limit=12
+## all mess api: https://messkhujuntwo.herokuapp.com/mess?page=1&&limit=12
 
 ```
-fetch('https://messkhujun.herokuapp.com/mess/popular?page=1&&limit=12',{
+fetch('https://messkhujuntwo.herokuapp.com/mess?page=1&&limit=12',{
     method: 'GET',
     headers: {
     'Content-Type': 'application/json',
@@ -11,10 +11,10 @@ fetch('https://messkhujun.herokuapp.com/mess/popular?page=1&&limit=12',{
     })
 ```
 
-## mess fetures api: https://messkhujun.herokuapp.com/mess/fetures?page=1&&limit=12
+## single mess api: https://messkhujuntwo.herokuapp.com/mess/:id
 
 ```
-fetch('https://messkhujun.herokuapp.com/mess/fetures?page=1&&limit=12',{
+fetch('https://messkhujuntwo.herokuapp.com/mess/:id',{
     method: 'GET',
     headers: {
     'Content-Type': 'application/json',
@@ -22,10 +22,10 @@ fetch('https://messkhujun.herokuapp.com/mess/fetures?page=1&&limit=12',{
     })
 ```
 
-## mess messSearch api: https://messkhujun.herokuapp.com/mess/messSearch?page=1&&limit=12
+## mess pupular api: https://messkhujuntwo.herokuapp.com/mess/popular?page=1&&limit=12
 
 ```
-fetch('https://messkhujun.herokuapp.com/mess/fetures?search=raton&&page=1&&limit=12',{
+fetch('https://messkhujuntwo.herokuapp.com/mess/popular?page=1&&limit=12',{
     method: 'GET',
     headers: {
     'Content-Type': 'application/json',
@@ -33,10 +33,32 @@ fetch('https://messkhujun.herokuapp.com/mess/fetures?search=raton&&page=1&&limit
     })
 ```
 
-## otp send api: https://messkhujun.herokuapp.com/auth/otpSender
+## mess fetures api: https://messkhujuntwo.herokuapp.com/mess/fetures?page=1&&limit=12
 
 ```
-fetch('https://messkhujun.herokuapp.com/auth/otpSender',{
+fetch('https://messkhujuntwo.herokuapp.com/mess/fetures?page=1&&limit=12',{
+    method: 'GET',
+    headers: {
+    'Content-Type': 'application/json',
+    },
+    })
+```
+
+## mess messSearch api: https://messkhujuntwo.herokuapp.com/mess/messSearch?page=1&&limit=12
+
+```
+fetch('https://messkhujuntwo.herokuapp.com/mess/fetures?search=raton&&page=1&&limit=12',{
+    method: 'GET',
+    headers: {
+    'Content-Type': 'application/json',
+    },
+    })
+```
+
+## otp send api: https://messkhujuntwo.herokuapp.com/auth/otpSender
+
+```
+fetch('https://messkhujuntwo.herokuapp.com/auth/otpSender',{
     method: 'POST',
     headers: {
     'Content-Type': 'application/json',
@@ -53,10 +75,10 @@ fetch('https://messkhujun.herokuapp.com/auth/otpSender',{
  })
 ```
 
-## otp verify api: https://messkhujun.herokuapp.com/auth/otpVerify/:token //required paramas token
+## otp verify api: https://messkhujuntwo.herokuapp.com/auth/otpVerify/:token //required paramas token
 
 ```
-fetch('https://messkhujun.herokuapp.com/auth/otpVerify/:token',{
+fetch('https://messkhujuntwo.herokuapp.com/auth/otpVerify/:token',{
     method: 'POST',
     headers: {
     'Content-Type': 'application/json',
@@ -67,10 +89,10 @@ fetch('https://messkhujun.herokuapp.com/auth/otpVerify/:token',{
     })
 ```
 
-## phone password login api: https://messkhujun.herokuapp.com/auth/signIn
+## phone password login api: https://messkhujuntwo.herokuapp.com/auth/signIn
 
 ```
-fetch('https://messkhujun.herokuapp.com/auth/signIn',{
+fetch('https://messkhujuntwo.herokuapp.com/auth/signIn',{
     method: 'POST',
     headers: {
     'Content-Type': 'application/json',
@@ -82,10 +104,10 @@ fetch('https://messkhujun.herokuapp.com/auth/signIn',{
     })
 ```
 
-## phone password reset api: https://messkhujun.herokuapp.com/auth/passwordResetSender
+## phone password reset api: https://messkhujuntwo.herokuapp.com/auth/passwordResetSender
 
 ```
-fetch('https://messkhujun.herokuapp.com/auth/passwordResetSender',{
+fetch('https://messkhujuntwo.herokuapp.com/auth/passwordResetSender',{
     method: 'POST',
     headers: {
     'Content-Type': 'application/json',
@@ -96,10 +118,10 @@ fetch('https://messkhujun.herokuapp.com/auth/passwordResetSender',{
     })
 ```
 
-## phone password reset code verify api: https://messkhujun.herokuapp.com/auth/passwordResetOtpVerify/:token
+## phone password reset code verify api: https://messkhujuntwo.herokuapp.com/auth/passwordResetOtpVerify/:token
 
 ```
-fetch('https://messkhujun.herokuapp.com/auth/passwordResetOtpVerify/:token',{
+fetch('https://messkhujuntwo.herokuapp.com/auth/passwordResetOtpVerify/:token',{
     method: 'POST',
     headers: {
     'Content-Type': 'application/json',
@@ -110,10 +132,10 @@ fetch('https://messkhujun.herokuapp.com/auth/passwordResetOtpVerify/:token',{
     })
 ```
 
-## password change code verify api: https://messkhujun.herokuapp.com/auth/passwordChange/:token
+## password change code verify api: https://messkhujuntwo.herokuapp.com/auth/passwordChange/:token
 
 ```
-fetch('https://messkhujun.herokuapp.com/auth/passwordChange/:token',{
+fetch('https://messkhujuntwo.herokuapp.com/auth/passwordChange/:token',{
     method: 'PUT',
     headers: {
     'Content-Type': 'application/json',
@@ -124,10 +146,10 @@ fetch('https://messkhujun.herokuapp.com/auth/passwordChange/:token',{
     })
 ```
 
-## get profile api: https://messkhujun.herokuapp.com/users/profile
+## get profile api: https://messkhujuntwo.herokuapp.com/users/profile
 
 ```
-fetch('https://messkhujun.herokuapp.com/users/profile',{
+fetch('https://messkhujuntwo.herokuapp.com/users/profile',{
     method: 'GET',
     headers: {
     'Content-Type': 'application/json',
@@ -137,10 +159,10 @@ fetch('https://messkhujun.herokuapp.com/users/profile',{
     })
 ```
 
-## update profile api: https://messkhujun.herokuapp.com/users/profile
+## update profile api: https://messkhujuntwo.herokuapp.com/users/profile
 
 ```
-fetch('https://messkhujun.herokuapp.com/users/profile',{
+fetch('https://messkhujuntwo.herokuapp.com/users/profile',{
     method: 'PUT',
     headers: {
     'Content-Type': 'application/json',
@@ -150,20 +172,20 @@ fetch('https://messkhujun.herokuapp.com/users/profile',{
     })
 ```
 
-## get all users api: https://messkhujun.herokuapp.com/users/allUsers
+## get all users api: https://messkhujuntwo.herokuapp.com/users/allUsers
 
 ```
-fetch('https://messkhujun.herokuapp.com/users/allUsers',{
+fetch('https://messkhujuntwo.herokuapp.com/users/allUsers',{
     method: 'GET',
     headers: {
     'Content-Type': 'application/json',
     },
 ```
 
-## get all admins api: https://messkhujun.herokuapp.com/users/allAdmins
+## get all admins api: https://messkhujuntwo.herokuapp.com/users/allAdmins
 
 ```
-fetch('https://messkhujun.herokuapp.com/users/allAdmins',{
+fetch('https://messkhujuntwo.herokuapp.com/users/allAdmins',{
     method: 'GET',
     headers: {
     'Content-Type': 'application/json',
@@ -175,10 +197,10 @@ fetch('https://messkhujun.herokuapp.com/users/allAdmins',{
     })
 ```
 
-## make admin api: https://messkhujun.herokuapp.com/users/makeAdmin
+## make admin api: https://messkhujuntwo.herokuapp.com/users/makeAdmin
 
 ```
-fetch('https://messkhujun.herokuapp.com/users/makeAdmin',{
+fetch('https://messkhujuntwo.herokuapp.com/users/makeAdmin',{
     method: 'PUT',
     headers: {
     'Content-Type': 'application/json',
@@ -190,10 +212,10 @@ fetch('https://messkhujun.herokuapp.com/users/makeAdmin',{
     })
 ```
 
-## remove admin api: https://messkhujun.herokuapp.com/users/removeAdmin
+## remove admin api: https://messkhujuntwo.herokuapp.com/users/removeAdmin
 
 ```
-fetch('https://messkhujun.herokuapp.com/users/removeAdmin',{
+fetch('https://messkhujuntwo.herokuapp.com/users/removeAdmin',{
     method: 'PUT',
     headers: {
     'Content-Type': 'application/json',
@@ -205,10 +227,10 @@ fetch('https://messkhujun.herokuapp.com/users/removeAdmin',{
     })
 ```
 
-## create Mess Service api: https://messkhujun.herokuapp.com/mess/createMess
+## create Mess Service api: https://messkhujuntwo.herokuapp.com/mess/createMess
 
 ```
-fetch('https://messkhujun.herokuapp.com/mess/createMess',{
+fetch('https://messkhujuntwo.herokuapp.com/mess/createMess',{
     method: 'POST',
     headers: {
     'Content-Type': 'application/json',
@@ -260,10 +282,10 @@ fetch('https://messkhujun.herokuapp.com/mess/createMess',{
     })
 ```
 
-## Update Mess Service api: https://messkhujun.herokuapp.com/mess/updateMess/_id
+## Update Mess Service api: https://messkhujuntwo.herokuapp.com/mess/updateMess/_id
 
 ```
-fetch('https://messkhujun.herokuapp.com/mess/updateMess/_id',{
+fetch('https://messkhujuntwo.herokuapp.com/mess/updateMess/_id',{
     method: 'PUT',
     headers: {
     'Content-Type': 'application/json',
@@ -315,10 +337,10 @@ fetch('https://messkhujun.herokuapp.com/mess/updateMess/_id',{
     })
 ```
 
-## get single mess api: https://messkhujun.herokuapp.com/mess/:id
+## get single mess api: https://messkhujuntwo.herokuapp.com/mess/:id
 
 ```
-fetch('https://messkhujun.herokuapp.com/mess/:id',{
+fetch('https://messkhujuntwo.herokuapp.com/mess/:id',{
     method: 'GET',
     headers: {
     'Content-Type': 'application/json',
@@ -327,10 +349,10 @@ fetch('https://messkhujun.herokuapp.com/mess/:id',{
     })
 ```
 
-## Delete mess api: https://messkhujun.herokuapp.com/mess/:_id
+## Delete mess api: https://messkhujuntwo.herokuapp.com/mess/:_id
 
 ```
-fetch('https://messkhujun.herokuapp.com/mess/:_id',{
+fetch('https://messkhujuntwo.herokuapp.com/mess/:_id',{
     method: 'DELETE',
     headers: {
     'Content-Type': 'application/json',
@@ -339,10 +361,10 @@ fetch('https://messkhujun.herokuapp.com/mess/:_id',{
     })
 ```
 
-## Get all mess api: https://messkhujun.herokuapp.com/mess
+## Get all mess api: https://messkhujuntwo.herokuapp.com/mess
 
 ```
-fetch('https://messkhujun.herokuapp.com/mess',{
+fetch('https://messkhujuntwo.herokuapp.com/mess',{
     method: 'GET',
     headers: {
     'Content-Type': 'application/json',
@@ -351,10 +373,10 @@ fetch('https://messkhujun.herokuapp.com/mess',{
     })
 ```
 
-## review specification user mess api: https://messkhujun.herokuapp.com/mess/reviewsAdd/_id
+## review specification user mess api: https://messkhujuntwo.herokuapp.com/mess/reviewsAdd/_id
 
 ```
-fetch('https://messkhujun.herokuapp.com/mess/reviewsAdd/_id',{
+fetch('https://messkhujuntwo.herokuapp.com/mess/reviewsAdd/_id',{
     method: 'PUT',
     headers: {
     'Content-Type': 'application/json',
@@ -368,10 +390,10 @@ fetch('https://messkhujun.herokuapp.com/mess/reviewsAdd/_id',{
     })
 ```
 
-## get my reviews api: https://messkhujun.herokuapp.com/users/myReviews
+## get my reviews api: https://messkhujuntwo.herokuapp.com/users/myReviews
 
 ```
-fetch('https://messkhujun.herokuapp.com/users/myReviews',{
+fetch('https://messkhujuntwo.herokuapp.com/users/myReviews',{
     method: 'GET',
     headers: {
     'Content-Type': 'application/json',
@@ -380,10 +402,10 @@ fetch('https://messkhujun.herokuapp.com/users/myReviews',{
     })
 ```
 
-## update my reviews api: https://messkhujun.herokuapp.com/users/myReviewsUpdate/:messId
+## update my reviews api: https://messkhujuntwo.herokuapp.com/users/myReviewsUpdate/:messId
 
 ```
-fetch('https://messkhujun.herokuapp.com/users/myReviewsUpdate/:messId',{
+fetch('https://messkhujuntwo.herokuapp.com/users/myReviewsUpdate/:messId',{
     method: 'PUT',
     headers: {
     'Content-Type': 'application/json',
@@ -396,10 +418,10 @@ fetch('https://messkhujun.herokuapp.com/users/myReviewsUpdate/:messId',{
     })
 ```
 
-## add my favorite list api: https://messkhujun.herokuapp.com/users/favouriteListAdd/:_id
+## add my favorite list api: https://messkhujuntwo.herokuapp.com/users/favouriteListAdd/:_id
 
 ```
-fetch('https://messkhujun.herokuapp.com/users/favouriteListAdd/:_id',{
+fetch('https://messkhujuntwo.herokuapp.com/users/favouriteListAdd/:_id',{
     method: 'PUT',
     headers: {
     'Content-Type': 'application/json',
@@ -408,10 +430,10 @@ fetch('https://messkhujun.herokuapp.com/users/favouriteListAdd/:_id',{
     })
 ```
 
-## get my favorite list api: https://messkhujun.herokuapp.com/users/myfavouriteListGet
+## get my favorite list api: https://messkhujuntwo.herokuapp.com/users/myfavouriteListGet
 
 ```
-fetch('https://messkhujun.herokuapp.com/users/myfavouriteListGet',{
+fetch('https://messkhujuntwo.herokuapp.com/users/myfavouriteListGet',{
     method: 'GET',
     headers: {
     'Content-Type': 'application/json',
@@ -420,10 +442,10 @@ fetch('https://messkhujun.herokuapp.com/users/myfavouriteListGet',{
     })
 ```
 
-## delete my favorite list api: https://messkhujun.herokuapp.com/users/favouriteListRemove/:_id
+## delete my favorite list api: https://messkhujuntwo.herokuapp.com/users/favouriteListRemove/:_id
 
 ```
-fetch('https://messkhujun.herokuapp.com/users/favouriteListRemove/:_id',{
+fetch('https://messkhujuntwo.herokuapp.com/users/favouriteListRemove/:_id',{
     method: 'DELETE',
     headers: {
     'Content-Type': 'application/json',
