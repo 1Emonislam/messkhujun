@@ -47,7 +47,7 @@ fetch('https://messkhujuntwo.herokuapp.com/mess/fetures?page=1&&limit=12',{
 ## mess messSearch api: https://messkhujuntwo.herokuapp.com/mess/messSearch?search=raton&&page=1&&limit=12
 
 ```
-fetch('https://messkhujuntwo.herokuapp.com/mess/fetures?search=raton&&page=1&&limit=12',{
+fetch('https://messkhujuntwo.herokuapp.com/mess/messSearch?search=raton&&page=1&&limit=12',{
     method: 'GET',
     headers: {
     'Content-Type': 'application/json',
