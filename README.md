@@ -1,5 +1,38 @@
 # messkhujun
 
+## mess pupular api: https://messkhujun.herokuapp.com/mess/popular?page=1&&limit=12
+
+```
+fetch('https://messkhujun.herokuapp.com/mess/popular?page=1&&limit=12',{
+    method: 'GET',
+    headers: {
+    'Content-Type': 'application/json',
+    },
+    })
+```
+
+## mess fetures api: https://messkhujun.herokuapp.com/mess/fetures?page=1&&limit=12
+
+```
+fetch('https://messkhujun.herokuapp.com/mess/fetures?page=1&&limit=12',{
+    method: 'GET',
+    headers: {
+    'Content-Type': 'application/json',
+    },
+    })
+```
+
+## mess messSearch api: https://messkhujun.herokuapp.com/mess/messSearch?page=1&&limit=12
+
+```
+fetch('https://messkhujun.herokuapp.com/mess/fetures?search=raton&&page=1&&limit=12',{
+    method: 'GET',
+    headers: {
+    'Content-Type': 'application/json',
+    },
+    })
+```
+
 ## otp send api: https://messkhujun.herokuapp.com/auth/otpSender
 
 ```
